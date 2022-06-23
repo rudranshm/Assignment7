@@ -1,0 +1,54 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 7}
+\subtitle{\Large AI1110: Probability and Random Variables \\ \large Indian Institute of Technology Hyderabad}
+\author{Rudransh Mishra \\ \normalsize AI21BTECH11025 \\ \vspace*{20pt} \normalsize  19 June 2022 \\ \vspace*{20pt} PROBABILITY, RANDOM VARIABLES, AND STOCHASTIC PROCESSES\\ \normalsize Athanasios Papoulis}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Example frame
+\begin{frame}{Example 15.2}
+Suppose-that s[n] is a first-order AR process and v[n] is white noise orthogonal to s[n]:
+\begin{align}
+& S_ss (z) = $\(\frac{N_0}{(1 - az^{-1})(l - az)}\)$\\
+& S_vv (z) = N \\
+& S_sv (z) = 0
+\end{align}
+
+In this case,
+\begin{align}
+S_xx (z) = S_ss (z) + N = \frac{aN(l - bz^{-1} )(1 - bz)}{b(1- az^{-1})(1- az)}
+\end{align}
+where $0<b<a<1$ and $b+b^{-1}=a+a^{-1}$ + $\frac{N_0}{aN}$
+\end{frame}
+\begin{frame}{Example (cont.)}
+Hence\\
+\begin{align}
+& H(z)=$\(\frac{bN_0}{aN(1 - bz^-1)(1 - bz)}\)$\\
+& h[n] = cb^{|n|}\\$
+& c=\(\frac{bN_0}{aN(1- b^2)}\)$\\
+& P=$\(\frac{bNo}{1 - a^2}\)[1- c\sum_{k=-\infty}^{k=\infty}(ab)^{|k|}]\\ $
+& P=$\(\frac{bN_0}{a(1-b_2)}\)$
+\end{align}
+\end{frame}
+\end{document}
+
+
+
+
